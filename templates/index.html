@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StockVision AI</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>StockVision AI</span>
+
+    </div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/dashboard">Dashboard</a></li>
+
+        <li><a href="/predict">Predict</a></li>
+
+        <li><a href="/about">About</a></li>
+
+        <li><a href="/contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<p class="tag">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+AI Powered Stock Intelligence
+
+</p>
+
+<h1>
+
+Predict Tomorrow's Market
+
+Using Artificial Intelligence
+
+</h1>
+
+<p class="description">
+
+Analyze historical stock data, identify trends,
+and generate intelligent predictions using
+Machine Learning.
+
+</p>
+
+<div class="buttons">
+
+<a href="/dashboard" class="primary">
+    <i class="fa-solid fa-rocket"></i>
+    Start Prediction
+</a>
+
+<i class="fa-solid fa-rocket"></i>
+
+Start Prediction
+
+</button>
+
+<button class="secondary">
+
+<i class="fa-solid fa-chart-column"></i>
+
+Live Dashboard
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="glass-card">
+
+<h2>Today's AI Analysis</h2>
+
+<h3>Bullish 📈</h3>
+
+<p>Confidence</p>
+
+<h1>94%</h1>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LIVE TICKER ================= -->
+
+<section class="ticker">
+
+<div class="ticker-content">
+
+<span>AAPL ▲ 198.32</span>
+
+<span>MSFT ▲ 512.44</span>
+
+<span>NVDA ▲ 183.91</span>
+
+<span>TSLA ▼ 302.15</span>
+
+<span>AMZN ▲ 241.52</span>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+<h2>
+
+Why Choose StockVision AI?
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>AI Prediction</h3>
+
+<p>Machine Learning powered forecasting.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+<h3>Interactive Charts</h3>
+
+<p>Visualize market trends beautifully.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Fast Analysis</h3>
+
+<p>Generate predictions within seconds.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Secure Platform</h3>
+
+<p>Built using reliable technologies.</p>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>
