@@ -1,9 +1,66 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>Coming Soon</title>
+
+<title>About</title>
+<link rel="icon"
+href="{{ url_for('static', filename='images/logo.png') }}"
+type="image/png">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
+
 <body>
-    <h1>Coming Soon 🚀</h1>
+    <div class="logo">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="StockVision AI Logo">
+
+<span>StockVision AI</span>
+
+</div>
+
+<div class="container dashboard">
+
+<h1>About StockVision AI</h1>
+
+<br>
+
+<p>
+
+StockVision AI is an Artificial Intelligence based Stock Prediction System.
+
+</p>
+
+<br>
+
+<h2>Technologies Used</h2>
+
+<ul>
+
+<li>Python</li>
+
+<li>Flask</li>
+
+<li>Machine Learning</li>
+
+<li>Random Forest</li>
+
+<li>yFinance API</li>
+
+<li>Plotly</li>
+
+<li>Bootstrap</li>
+
+<li>Technical Indicators</li>
+
+</ul>
+
+</div>
+
 </body>
+
 </html>

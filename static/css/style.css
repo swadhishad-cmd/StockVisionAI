@@ -84,19 +84,45 @@ body{
 
 .logo{
 
-    display:flex;
+display:flex;
 
-    align-items:center;
+align-items:center;
 
-    gap:12px;
+gap:12px;
 
-    font-size:30px;
+font-size:28px;
 
-    font-weight:700;
+font-weight:700;
 
-    color:#06B6D4;
+font-family:'Poppins',sans-serif;
 
-    font-family:'Poppins',sans-serif;
+}
+
+.logo img{
+
+width:48px;
+
+height:48px;
+
+object-fit:contain;
+
+border-radius:12px;
+
+}
+
+.logo span{
+
+background:linear-gradient(
+90deg,
+#00E5FF,
+#4F46E5,
+#7C3AED);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+font-weight:700;
 
 }
 
@@ -650,6 +676,46 @@ grid-template-columns:1fr;
 .buttons{
 
 flex-direction:column;
+
+}
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    margin-top:80px;
+
+    padding:35px;
+
+    text-align:center;
+
+    background:#0B1120;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer h3{
+
+    color:#00E5FF;
+
+    margin-bottom:10px;
+
+}
+
+.footer p{
+
+    color:#94A3B8;
+
+    margin:5px 0;
+
+}
+.primary:disabled{
+
+opacity:.7;
+
+cursor:not-allowed;
 
 }
 

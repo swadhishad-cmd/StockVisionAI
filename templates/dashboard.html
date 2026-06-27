@@ -7,6 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>StockVision AI Dashboard</title>
+<link rel="icon"
+href="{{ url_for('static', filename='images/logo.png') }}"
+type="image/png">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,8 +28,11 @@ href="{{ url_for('static', filename='css/style.css') }}">
 <nav class="navbar">
 
 <div class="logo">
-<i class="fa-solid fa-chart-line"></i>
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="StockVision AI Logo">
+
 <span>StockVision AI</span>
+
 </div>
 
 <ul>
@@ -70,8 +76,13 @@ href="{{ url_for('static', filename='css/style.css') }}">
 
 <div class="col-md-2">
 
-<button type="submit" class="primary w-100">
-Search
+<button
+type="submit"
+class="primary w-100"
+id="searchBtn">
+
+Search Stock
+
 </button>
 
 </div>
@@ -80,10 +91,13 @@ Search
 
 </form>
 
-{% if error %}
+{% if not stock_data and not error %}
 
-<div class="alert alert-danger">
-{{ error }}
+<div class="alert alert-info text-center">
+
+Select a company and click
+<b>Search Stock</b>
+
 </div>
 
 {% endif %}
@@ -188,7 +202,38 @@ Confidence : {{ confidence }}%
 {% endif %}
 
 </div>
+<footer class="footer">
 
+    <h3>📈 StockVision AI</h3>
+
+    <p>
+        AI Powered Stock Market Prediction System
+    </p>
+
+    <p>
+        Developed by <strong>Swadisha</strong>
+    </p>
+
+    <p>
+        © 2026 All Rights Reserved
+    </p>
+
+</footer>
+<script>
+
+const form=document.querySelector("form");
+
+const btn=document.getElementById("searchBtn");
+
+form.addEventListener("submit",function(){
+
+btn.innerHTML="⏳ Predicting...";
+
+btn.disabled=true;
+
+});
+
+</script>
 </body>
 
 </html>
